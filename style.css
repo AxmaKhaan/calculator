@@ -57,10 +57,11 @@ body {
     /* border: 2px solid red; */
     box-shadow: rgb(93, 94, 95) 3px 3px 6px 0px inset, rgba(160, 159, 159, 0.5) -3px -3px 6px 1px inset;
     width: 100%;
-    height: 50px;
+    height: 57px;
     padding: 10px;
     font-size: 30px;
     background-color: rgb(1, 10, 10);
+    border-radius: 3px;
 }
 .calculator_box .key_container {
     display: grid;
