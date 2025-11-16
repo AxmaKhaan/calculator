@@ -32,7 +32,11 @@ body {
     width: 90%;
 }
 .calculator_box {
-        box-shadow: rgba(191, 242, 247, 0.56) 0px 22px 70px 4px;
+    background-image: url(153199058b53a8ec09b6b8c819c6f06e.jpg);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+        box-shadow: inset 4px 4px 15px 0px #000000;
+        /* box-shadow: revert; */
         /* border: 2px solid white; */
         background-color: rgba(0, 255, 255, 0.815);
         width: 45%;
@@ -51,21 +55,29 @@ body {
 }
 .calculator_box #input_area input {
     /* border: 2px solid red; */
+    box-shadow: rgb(93, 94, 95) 3px 3px 6px 0px inset, rgba(160, 159, 159, 0.5) -3px -3px 6px 1px inset;
     width: 100%;
-    height: 40px;
+    height: 50px;
     padding: 10px;
+    font-size: 30px;
+    background-color: rgb(1, 10, 10);
 }
 .calculator_box .key_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 10px;
     /* border: 2px solid white; */
     width: 90%;
+    justify-content: center;
+    text-align: center;
+}
+.calculator_box .key_container button {
+    font-size: 20px;
 }
 .calculator_box .key_container .box {
-    width: 50px;
+    width: 55px;
     background-color: black;
-    height: 50px;
+    height: 55px;
     box-shadow: -1px -1px 8px rgba(0, 255, 255, 0.384);
     display: flex;
     justify-content: center;
@@ -76,8 +88,12 @@ body {
 .calculator_box .key_container .box:active {
     box-shadow: 1px 1px 8px rgba(0, 255, 255, 0.192);
     transform: scale(-0.9);
+    font-size: 15px;
 }
 .calculator_box .key_container #box-4, #box-8, #box-16, #box-12{
-    background-color: rgb(69, 250, 250);
-    color: black;
+    background-color: rgb(7, 185, 185);
+    color: white;
+}
+.calculator_box .key_container .box-extra {
+    visibility: hidden;
 }
