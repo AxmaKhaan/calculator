@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+body {
+    background-color: rgb(1, 15, 15);
+    /* background: url(../pexels-eberhardgross-2310713.jpg);
+    background-repeat: no-repeat;
+        background-size: contain; */
+}
+
+.container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 2px solid red; */
+}
+.cont_boxes {
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container #monster_box img {
+    width: 90%;
+}
+.calculator_box {
+        box-shadow: rgba(191, 242, 247, 0.56) 0px 22px 70px 4px;
+        /* border: 2px solid white; */
+        background-color: rgba(0, 255, 255, 0.815);
+        width: 45%;
+        height: 90%;
+        border-radius: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0px;
+        gap: 60px;
+}
+.calculator_box #input_area {
+    /* border: 2px solid blue; */
+    width: 70%;
+}
+.calculator_box #input_area input {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+.calculator_box .key_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* border: 2px solid white; */
+    width: 90%;
+}
+.calculator_box .key_container .box {
+    width: 50px;
+    background-color: black;
+    height: 50px;
+    box-shadow: -1px -1px 8px rgba(0, 255, 255, 0.384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: none;
+}
+.calculator_box .key_container .box:active {
+    box-shadow: 1px 1px 8px rgba(0, 255, 255, 0.192);
+    transform: scale(-0.9);
+}
+.calculator_box .key_container #box-4, #box-8, #box-16, #box-12{
+    background-color: rgb(69, 250, 250);
+    color: black;
+}
